@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SoccerQuiz</string>
+    <string name="title_text">SoccerQuiz</string>
+
+    <string name="correct_toast">Correct!</string>
+    <string name="wrong_toast">Wrong!</string>
+    <string name="next_button">Next</string>
+    <string name="check_button">Check answer</string>
+
+    <string name="first_level">Level 1</string>
+    <string name="second_level">Level 2</string>
+    <string name="third_level">Level 3</string>
+
+    <string name="first_level_argentina">Argentina</string>
+    <string name="first_level_brazil">Brazil</string>
+    <string name="first_level_france">France</string>
+    <string name="first_level_spain">Spain</string>
+    <string name="second_level_belgium">Belgium</string>
+    <string name="second_level_croatia">Croatia</string>
+    <string name="second_level_england">England</string>
+    <string name="second_level_peru">Peru</string>
+    <string name="third_level_liechtenstein">Liechtenstein</string>
+    <string name="third_level_macedonia">Macedonia</string>
+    <string name="third_level_qatar">Qatar</string>
+    <string name="third_level_vietnam">Vietnam</string>
+
+</resources>
