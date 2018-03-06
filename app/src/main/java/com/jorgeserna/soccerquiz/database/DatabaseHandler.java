@@ -41,18 +41,18 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + ")"
         );
 
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'Argentina', 'R.drawable.argentina.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'Brazil', 'R.drawable.brazil.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'France', 'R.drawable.france.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'Spain', 'R.drawable.spain.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'Belgium', 'R.drawable.belgium.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'Croatia', 'R.drawable.croatia.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'England', 'R.drawable.england.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'Peru', 'R.drawable.peru.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Liechtenstein', 'R.drawable.liechtenstein.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Macedonia', 'R.drawable.macedonia.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Qatar', 'R.drawable.qatar.png')");
-        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Vietnam', 'R.drawable.vietnam.png')");
+//        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'Argentina', 'R.drawable.argentina')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'Brazil', 'R.drawable.brazil')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'France', 'R.drawable.france')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('1', 'Spain', 'R.drawable.spain')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'Belgium', 'R.drawable.belgium')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'Croatia', 'R.drawable.croatia')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'England', 'R.drawable.england')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('2', 'Peru', 'R.drawable.peru')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Liechtenstein', 'R.drawable.liechtenstein')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Macedonia', 'R.drawable.macedonia')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Qatar', 'R.drawable.qatar')");
+        db.execSQL("insert into " + CountryTable.NAME + "(LEVEL, COUNTRYNAME, FILENAME ) values ('3', 'Vietnam', 'R.drawable.vietnam')");
 
     }
 

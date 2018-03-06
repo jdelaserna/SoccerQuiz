@@ -3,6 +3,7 @@ package com.jorgeserna.soccerquiz;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +15,6 @@ import java.util.List;
 
 public class LevelActivity extends AppCompatActivity {
 
-    private int mLevel;
     private Button mCheckAnswer;
     private Country mCountry;
     private Country mFilename;
@@ -24,15 +24,16 @@ public class LevelActivity extends AppCompatActivity {
     private EditText mAnswer;
     private String mCorrectAnswer;
     private int mToast;
+    private Drawable image;
 
-    private void updatePhotoView(Country mFilename) {
+    private void updatePhotoView() {
         Country country = new Country(mCountry.getCountry(), mFilename.getFilename());
         country.setFilename(mFilename.getFilename());
 
         mImage = country.getFilename();
-        int imageResource = getResources().getIdentifier(mImage, null, getPackageName());
+        int imageResource = getResources().getIdentifier(mImage, "drawable", getPackageName());
         mCountryView = (ImageView) findViewById(R.id.country_logo);
-        Drawable image = getResources().getDrawable(imageResource, null);
+        image = ResourcesCompat.getDrawable(getResources(), imageResource, null);
         mCountryView.setImageDrawable(image);
     }
 
@@ -48,13 +49,13 @@ public class LevelActivity extends AppCompatActivity {
         mCountryList = countryLab.getCountries(mLevel);
 
         mCountry = mCountryList.get(0);
-        mFilename = mCountryList.get(1);
+        mFilename = mCountryList.get(0);
         mCorrectAnswer = mCountry.getCountry();
 
         mAnswer = (EditText) findViewById(R.id.answer);
 
         mCountryView = (ImageView) findViewById(R.id.country_logo);
-        updatePhotoView(mFilename);
+//        updatePhotoView();
 
         mCheckAnswer = (Button) findViewById(R.id.check_button);
 
